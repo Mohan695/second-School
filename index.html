@@ -24,6 +24,15 @@
         h3 {
             color: #f64c72
         }
+        .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
     </style>
 </head>
 
@@ -92,7 +101,7 @@
 
     </div>
     <div class="container">
-        <h3 style="color:red"><b>Alert!</h3></b>
+        <h3 style="color:red" class="blink_me"><b>Alert!</h3></b>
         We are enrolling only 300 students, so don't give it a second thought. Call and enquiry.
         <p></p>
     </div>
